@@ -23,6 +23,7 @@ pipeline{
     post{
         always{
             sh 'echo this section always runs'
+            deleteDir()
         }
         success{
             echo "This section runs when the build is success"
