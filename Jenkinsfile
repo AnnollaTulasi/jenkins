@@ -38,6 +38,7 @@ pipeline{
                 echo "Toggle: ${params.TOGGLE}"
                 echo "Choice: ${params.CHOICE}"
                 echo "Password: ${params.PASSWORD}"
+                echo "Added webhooh and pushing to git"
             }
         }
     }
