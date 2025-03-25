@@ -27,7 +27,7 @@ pipeline{
         }
         stage("Deploy"){
             when{
-                branch 'production'
+                expression{env.GIT_BRANCH == 'origin/main'}
             }
             steps{
                 sh 'echo This is deploy'
