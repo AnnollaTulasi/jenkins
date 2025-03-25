@@ -22,7 +22,7 @@ pipeline{
         }
         stage("Test"){
             steps{
-                sh 'echo This is branch "GIT_BRANCH'
+                sh 'echo This is branch "${gitinfo.GIT_BRANCH}"'
             }
         }
         stage("Deploy"){
